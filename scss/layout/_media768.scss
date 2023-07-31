@@ -1,0 +1,33 @@
+@media (max-width:768px){
+    .cambio-portada{
+        @include flex(column,none,center,center);
+        h1{
+            font-family: $font-titulos;
+            color: rgba(136, 12, 12, 1);
+            font-size: 1.875rem;
+        }
+        p{
+            font-family: $font-parrafos;
+            font-size: 1.5625rem;
+        }
+    }
+}
+    .carousel-item{
+        img{
+            width: 60%;
+            height: 25rem;
+            border-radius: 40%;
+        }
+    }
+.cambio-portada-cards{
+    @include flex(row,wrap,center,none);
+    div{
+        @include cards(30%,6.25rem,30%,row,space-around,center,.9375rem,.9375rem);
+        overflow: hidden;
+        h2{
+            font-family: $font-titulos;
+            font-size: 20p;
+        }
+    }
+}
+

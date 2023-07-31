@@ -1,0 +1,38 @@
+main{
+    width: 100%;
+    background-color: $background-principal;
+    padding: 20px;
+
+    div{
+        section{
+            @include flex(column,none,center,center);
+            h1{
+                font-family: $font-titulos;
+                color: rgba(136, 12, 12, 1);
+                font-size: 3em;}
+            p{
+                font-family: $font-parrafos;
+                font-size: 2em;
+            }
+        }
+    }
+}
+.carousel-item{
+    img{
+        width: 60%;
+        height: 31.25rem;
+        border-radius: 40%;
+    }
+}
+
+.cambio-portada-cards{
+    @include flex(row,wrap,center,none);
+    div{
+        @include cards(25%,8.875rem,40%,row,space-around,center,1.25rem 1.25rem,1.25rem);
+        overflow: hidden;
+        h2{
+            font-family: $font-titulos;
+        }
+    }
+        
+}
