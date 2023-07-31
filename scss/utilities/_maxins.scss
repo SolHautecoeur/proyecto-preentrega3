@@ -1,0 +1,19 @@
+@mixin flex($direction,$wrap,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin cards($ancho,$largo,$radio,$direction,$justify,$align,$margen,$distancia){
+    background-color: rgba(193, 5, 16, 0.71);
+    display: flex;   
+    width: $ancho; 
+    height: $largo;
+    border-radius: $radio;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: $margen;
+    gap: $distancia;
+}

@@ -1,0 +1,12 @@
+main{
+    background-color: $background-principal;
+    div{
+        section{
+            @include flex(column,none,center,center);
+            h1{
+                font-family: $font-titulos;
+                color: rgba(136, 12, 12, 1);
+                font-size: 3em;}
+        }
+    }
+}
