@@ -1,0 +1,44 @@
+main{
+    width: 100%;
+    background-color: $background-principal;
+    padding: 20px;
+    div{
+        section{
+            @include flex(column,none,center,center);
+            h1{
+                font-family: $font-titulos;
+                color: rgba(136, 12, 12, 1);
+                font-size: 50px;}
+            p{
+                font-family: $font-parrafos;
+                font-size: 1.5625rem;
+            }
+        }
+    }
+}
+.carousel-item{
+    img{
+        width: 80%;
+        height: 31.25rem;
+        border-radius: 40%;
+    }
+}
+
+.cambio-portada-cards{
+    @include flex(row,wrap,center,center);
+    div{
+        @include cards(18.75rem,9.375rem,40%,row,center,center,.3125rem,.625rem);
+        overflow: hidden;
+        padding: .625rem;
+        img{
+            width: 50px;
+            height: 50px;
+            border: 50%;
+        }
+        h2{
+            font-family: $font-titulos;
+            font-size: 1.5625rem;
+        }
+    }
+        
+}

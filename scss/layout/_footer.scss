@@ -1,0 +1,15 @@
+footer{
+    width: 100%;
+    background-color: $background-extremos;
+    padding: .625rem;
+    div{
+        @include flex(row,wrap,space-between,center);
+        gap: 1.875rem;
+        div{
+            p{
+                font-family: $font-subtitulos
+            }
+        }
+    }
+    }
+    

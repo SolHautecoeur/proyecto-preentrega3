@@ -1,0 +1,14 @@
+.cambio-ingreso{
+    @include flex(row,wrap,space-between,center);
+    padding: 1.25rem;
+    gap: 1.25rem;
+
+}
+.cambio-cards-ingreso{
+    @include flex(column,wrap,none,center);
+}
+.cambio-img-ingreso img{
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+}

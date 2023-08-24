@@ -1,0 +1,51 @@
+.cambio-main-talleres{
+    @include flex(row,none,center,center);
+    padding: 1.25rem;
+    div{
+        h1{
+            font-family: $font-titulos;
+            color: rgba(136, 12, 12, 1);
+            font-size: 2.1875rem;
+        }
+        p{
+            font-family: $font-parrafos;
+            font-size: 1.5625rem;
+        }
+    }
+    div{
+        img{
+            width: 600px;
+            border-radius: 40%;
+        }
+    }
+}
+.cambio-presentacion-talleres{
+    @include flex(column,none,center,center);
+}
+.cambio-presentacion-talleres1{
+    @include cards(31.25rem,9.375rem,20%,column,center,center,.625rem,.3125rem);
+    overflow: hidden;
+    img{
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 50%;
+    }
+    h2{
+        font-family: $font-titulos;
+        color: rgba(136, 12, 12, 1);
+        font-size: 1rem;
+    }
+}
+.button-talleres-1{  
+    @include flex(row,wrap,center,center);
+    button{
+        width: 11.25rem;
+        height: 5rem;
+        border-radius: 20%;
+        font-family: $font-titulos;
+        font-size: 1.125rem;
+        background-color: rgba(136, 12, 12, 1);
+        color: white;
+        justify-content: center;
+    }
+}

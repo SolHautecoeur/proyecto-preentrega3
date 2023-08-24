@@ -1,0 +1,113 @@
+@media (max-width:320px){
+    header{
+        @include flex(column,none,center,center);
+        nav{
+            ul{
+                @include flex(column,none,center,center);
+                li{
+                    a{
+                        font-size: .8125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.main-div{
+    h1{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+.carousel-item{
+    img{
+        width: 50%;
+        height: 200px;
+    }
+}
+.cambio-portada-cards{
+    div{
+        @include cards(12.5rem,4.375rem,40%,row,center,center,.3125rem,.625rem);
+        h2{
+            font-size: 1rem;
+        }
+    }
+        
+}
+.cambio-portada{
+    @include flex(column,none,center,center);
+}
+.cambio-main-nosotros img{
+        width: 250px;
+    }
+
+.cambio-section{
+    h1{
+        font-size: 1.25rem;
+    }    
+    p{
+        font-size: 1.125rem;
+    }
+}
+.cambio-main-talleres{
+    div{
+        img{
+            width: 300px;
+            border-radius: 30%;
+        }
+    }
+}
+
+.cambio-presentacion-talleres1{
+    @include cards(12.5rem,7.5rem,15%,column,center,center,.625rem,.3125rem);
+    img{
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    h2{
+        font-size: .8125rem;
+    }
+}
+.button-talleres-1{  
+    button{
+        width: 7.5rem;
+        height: 2.8125rem;
+        font-size: .8125rem;
+    }
+}
+.cards-noticias{
+    @include cards(17.5rem,9.375rem,20%,column,space-between,center,.625rem,none);
+    img{
+        width: 4.375rem;
+        height: 4.375rem;
+    }
+    p{
+        font-size: 1.125rem;
+    }
+    h2{
+        font-size: .875rem;
+    }
+}
+.button-nosotros{
+    img{
+        width: 1.875rem;
+    }
+}
+.cambio-img-ingreso img{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+footer{
+    div{
+        p{
+            font-size: .8125rem;
+        }
+        img{
+            width: 1.5625rem;
+        }
+    }
+}
+

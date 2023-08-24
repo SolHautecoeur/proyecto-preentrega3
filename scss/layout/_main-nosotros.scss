@@ -1,0 +1,64 @@
+.main-nosotros{
+    width: 100%;
+    gap: 1.875rem;
+}
+
+.cambio-main-nosotros{
+    @include flex(row,none,center,center);
+    gap: 1.875rem;
+    padding: 1.875rem;
+}
+.cambio-nosotros img{
+    width: 600px;
+    border-radius: 20%;
+}
+.cambio-section{
+    @include flex(column,wrap,center,center);
+    h1{
+        font-family: $font-titulos;
+        font-size: 2.5rem;
+        color: rgba(136, 12, 12, 1);
+    } 
+    p{
+        font-family: $font-parrafos;
+        font-size: 2em;
+    }
+}
+.cambio-presentacion{
+    @include flex(row,wrap,center,center);
+    row-gap: 1.25rem;
+}
+.cambio-presentacion1{
+    @include cards(25rem,17.5rem,20%,column,center,center,.625rem,.3125rem);
+    img{
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 50%;
+    }
+    p{
+        font-family: $font-subtitulos;
+    }
+    h2{
+        font-family: $font-titulos;
+        color: rgba(136, 12, 12, 1);
+    }
+}
+.button-talleres{  
+    @include flex(row,wrap,center,center);
+    button{
+        width: 12.5rem;
+        height: 5.625rem;
+        border-radius: 20%;
+        font-family: $font-titulos;
+        font-size:1.25rem;
+        background-color: rgba(136, 12, 12, 1);
+        color: white;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+

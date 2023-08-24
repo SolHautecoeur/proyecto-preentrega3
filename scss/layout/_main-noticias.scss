@@ -1,0 +1,33 @@
+.cambio-main-noticias{
+    @include flex(column,none,center,center);
+    width: 100%;
+    padding: 1.25rem;
+}
+.cambio-presentacion-noticias{
+    @include flex(row,wrap,center,center);
+}
+.cards-noticias{
+    @include cards(43.75rem,15.625rem,20%,column,space-between,center,.625rem,none);
+    overflow: hidden;
+    padding: .9375rem;
+    img{
+        width: 9.375rem;
+        height: 9.375rem;
+        border-radius: 50%;
+        padding: .625rem;
+    }
+    p{
+        font-family: $font-parrafos;
+        font-size: 2.1875rem;
+    }
+    h2{
+        font-family: $font-titulos;
+        color: rgba(136, 12, 12, 1);
+        font-size: 1.25rem;
+    }
+}
+.button-nosotros{
+    img{
+        width: 50px;
+    }
+}
